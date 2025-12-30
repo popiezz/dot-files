@@ -3,12 +3,14 @@ return {
 	{ "shaunsingh/nord.nvim", priority = 1000 },
 	{ "xero/miasma.nvim", priority = 1000 },
 	{ "vague-theme/vague.nvim", priority = 1000 },
+	{ "scottmckendry/cyberdream.nvim", priority = 1000 },
+	{ "blazkowolf/gruber-darker.nvim", priority = 1000 },
 	{
 		"whatyouhide/vim-gotham",
 		priority = 1000,
 		lazy = false,
 		config = function()
-			vim.cmd.colorscheme("gotham")
+			vim.cmd.colorscheme("gruber-darker")
 		end,
 	},
 }
