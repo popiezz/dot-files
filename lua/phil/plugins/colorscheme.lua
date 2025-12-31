@@ -5,12 +5,13 @@ return {
 	{ "vague-theme/vague.nvim", priority = 1000 },
 	{ "scottmckendry/cyberdream.nvim", priority = 1000 },
 	{ "blazkowolf/gruber-darker.nvim", priority = 1000 },
+	{ "f4z3r/gruvbox-material.nvim", priority = 1000 },
 	{
 		"whatyouhide/vim-gotham",
 		priority = 1000,
 		lazy = false,
 		config = function()
-			vim.cmd.colorscheme("gruber-darker")
+			vim.cmd.colorscheme("gruvbox-material")
 		end,
 	},
 }
