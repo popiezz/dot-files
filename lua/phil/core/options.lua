@@ -44,6 +44,7 @@ opt.swapfile = false
 
 --set width of file to 80 char
 opt.textwidth = 80
+opt.formatoptions:append("t")
 
 -- hide bottom insert
 vim.o.showmode = false
