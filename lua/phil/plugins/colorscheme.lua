@@ -9,12 +9,13 @@ return {
 	{ "rebelot/kanagawa.nvim", priority = 1000 },
 	{ "folke/tokyonight.nvim", priority = 1000 },
 	{ "AlexvZyl/nordic.nvim", priority = 1000 },
+	{ "neanias/everforest-nvim", priority = 1000 },
 	{
 		"whatyouhide/vim-gotham",
 		priority = 1000,
 		lazy = false,
 		config = function()
-			vim.cmd.colorscheme("nordic")
+			vim.cmd.colorscheme("everforest")
 		end,
 	},
 }
