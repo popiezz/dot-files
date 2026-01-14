@@ -42,5 +42,8 @@ opt.splitbelow = true
 -- turn off swapfile
 opt.swapfile = false
 
+--set width of file to 80 char
+opt.textwidth = 80
+
 -- hide bottom insert
 vim.o.showmode = false
