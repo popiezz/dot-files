@@ -42,9 +42,15 @@ opt.splitbelow = true
 -- turn off swapfile
 opt.swapfile = false
 
---set width of file to 80 char
-opt.textwidth = 80
-opt.formatoptions:append("t")
-
 -- hide bottom insert
 vim.o.showmode = false
+
+-- set text width to 80 in markdown files
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "markdown",
+	callback = function()
+		local opt = vim.opt_local
+		opt.textwidth = 80
+		opt.formatoptions:append("t")
+	end,
+})
