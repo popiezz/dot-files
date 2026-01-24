@@ -19,3 +19,5 @@ require("lazy").setup({ { import = "phil.plugins" }, { import = "phil.plugins.ls
 		notify = false,
 	},
 })
+
+vim.cmd.colorscheme("kanagawa")

@@ -7,6 +7,10 @@ keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current window" })
 
+-- replace stuff
+keymap.set("n", "<leader>ra", ":%s/", { desc = "Replace all" })
+keymap.set("n", "<leader>rr", ":%s/\\<<C-r><C-w>\\>/", { desc = "Replace word under cursor" })
+
 -- open Explore
 -- keymap.set("n", "<leader>e", "<cmd>Explore<CR>", {desc = "Open Explore"})
 
