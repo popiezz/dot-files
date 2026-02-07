@@ -44,3 +44,21 @@ opt.swapfile = false
 
 -- hide bottom insert
 vim.o.showmode = false
+
+-- Custom Netrw Mappings
+vim.api.nvim_create_autocmd("filetype", {
+	pattern = "netrw",
+	desc = "Better mappings for Netrw",
+	callback = function()
+		local bind = function(lhs, rhs)
+			vim.keymap.set("n", lhs, rhs, { remap = true, buffer = true })
+		end
+
+		-- 1. How to delete: Already 'D' by default, but we can ensure it's mapped
+		-- 2. How to rename: Already 'R' by default, mapping 'r' for ease of use
+		bind("r", "R")
+
+		-- 3. Set 'a' to add a file instead of '%'
+		bind("a", "%")
+	end,
+})
