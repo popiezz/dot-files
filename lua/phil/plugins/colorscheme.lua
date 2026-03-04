@@ -7,9 +7,19 @@ return {
 	{ "blazkowolf/gruber-darker.nvim", priority = 1000 },
 	{ "f4z3r/gruvbox-material.nvim", priority = 1000 },
 	{ "rebelot/kanagawa.nvim", priority = 1000 },
-	{ "folke/tokyonight.nvim", priority = 1000 },
 	{ "AlexvZyl/nordic.nvim", priority = 1000 },
 	{ "neanias/everforest-nvim", priority = 1000 },
 	{ "jpwol/thorn.nvim", priority = 1000 },
 	{ "rose-pine/neovim", priority = 1000 },
+	{
+		"folke/tokyonight.nvim",
+		priority = 1000,
+		opts = {
+			transparent = true, -- This enables transparency for the theme
+			styles = {
+				sidebars = "transparent", -- Ensures sidebars like nvim-tree are also transparent
+				floats = "transparent", -- Ensures floating windows are transparent
+			},
+		},
+	},
 }

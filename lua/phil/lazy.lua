@@ -19,7 +19,7 @@ require("lazy").setup({ { import = "phil.plugins" }, { import = "phil.plugins.ls
 		notify = false,
 	},
 })
-vim.cmd.colorscheme("rose-pine")
+vim.cmd.colorscheme("tokyonight")
 vim.opt.scrolloff = 999
 vim.opt.virtualedit = "all"
 
