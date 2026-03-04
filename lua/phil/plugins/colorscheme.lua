@@ -11,4 +11,5 @@ return {
 	{ "AlexvZyl/nordic.nvim", priority = 1000 },
 	{ "neanias/everforest-nvim", priority = 1000 },
 	{ "jpwol/thorn.nvim", priority = 1000 },
+	{ "rose-pine/neovim", priority = 1000 },
 }

@@ -19,5 +19,21 @@ require("lazy").setup({ { import = "phil.plugins" }, { import = "phil.plugins.ls
 		notify = false,
 	},
 })
+vim.cmd.colorscheme("rose-pine")
+vim.opt.scrolloff = 999
+vim.opt.virtualedit = "all"
 
-vim.cmd.colorscheme("kanagawa")
+-- Fixes the floating cursor
+vim.opt.virtualedit = ""
+-- Breaks lines at 80 characters (creates actual new lines)
+vim.opt.textwidth = 80
+-- Optional: Shows a vertical line at the wrap point so you see it coming
+vim.opt.colorcolumn = "80"
+
+vim.cmd([[
+  augroup TransparentBackground
+    autocmd!
+    autocmd ColorScheme * highlight Normal ctermbg=none guibg=none
+    autocmd ColorScheme * highlight NonText ctermbg=none guibg=none
+  augroup END
+]])
