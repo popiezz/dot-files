@@ -19,21 +19,6 @@ return {
 			},
 		})
 
-		mason_lspconfig.setup({
-			ensure_installed = {
-				"gopls",
-				"pyright",
-				"ts_ls",
-				"html",
-				"cssls",
-				"graphql",
-				"lua_ls",
-				"marksman",
-				"sqlls",
-			},
-			automatic_installation = true,
-		})
-
 		mason_tool_installer.setup({
 			ensure_installed = {
 				-- Formatters

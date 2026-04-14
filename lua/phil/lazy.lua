@@ -21,9 +21,6 @@ require("lazy").setup({ { import = "phil.plugins" }, { import = "phil.plugins.ls
 })
 -- vim.cmd.colorscheme("tokyonight")
 vim.opt.scrolloff = 999
-vim.opt.virtualedit = "all"
-
--- Fixes the floating cursor
 vim.opt.virtualedit = ""
 -- Breaks lines at 80 characters (creates actual new lines)
 vim.opt.textwidth = 80
