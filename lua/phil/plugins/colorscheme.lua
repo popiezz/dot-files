@@ -9,6 +9,7 @@ return {
 	{ "neanias/everforest-nvim", priority = 1000 },
 	{ "jpwol/thorn.nvim", priority = 1000 },
 	{ "rose-pine/neovim", priority = 1000 },
+	{ "pineapplegiant/spaceduck.nvim", priority = 1000 },
 	{
 
 		"folke/tokyonight.nvim",
