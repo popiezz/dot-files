@@ -26,11 +26,12 @@ vim.opt.virtualedit = ""
 vim.opt.textwidth = 80
 -- Optional: Shows a vertical line at the wrap point so you see it coming
 vim.opt.colorcolumn = "80"
-
-vim.cmd([[
-  augroup TransparentBackground
-    autocmd!
-    autocmd ColorScheme * highlight Normal ctermbg=none guibg=none
-    autocmd ColorScheme * highlight NonText ctermbg=none guibg=none
-  augroup END
-]])
+--[
+-- vim.cmd([[
+--augroup TransparentBackground
+-- autocmd!
+--autocmd ColorScheme * highlight Normal ctermbg=none guibg=none
+--autocmd ColorScheme * highlight NonText ctermbg=none guibg=none
+--augroup END
+--]])
+--]]
